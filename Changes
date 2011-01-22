@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+	- Changed regexp again to be more consistent
 
 0.002     2011-01-22 04:02:32 Europe/Berlin
 	- Added params to container

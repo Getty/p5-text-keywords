@@ -37,7 +37,17 @@ Test::Text::Keywords::Standard->new(
 		],[
 			'Peter Parker uses Perl on London at YAPC::EU 2010',
 			'Lalala More Beer on Ice',
-			
+
+			'Perl','Perl',[],1,0,0,0,
+			'YAPC::EU 2010','YAPC::(\w\w) (\d\d\d\d)|YAPC',['EU','2010'],1,0,0,0,
+			'London','London',[],1,0,1,0,
+			'Beer','Beer',[],0,1,1,1,
+			'Ice','Ice',[],0,1,1,0,
+			'Peter Parker','Peter Parker',[],1,0,1,1,
+		],[
+			'Peter# #Parker !uses% %__Perl# (((on(( ()London #at #YAPC::EU 2010',
+			'Lalala!! ""More____Beer# !"!"§on ###Ice',
+
 			'Perl','Perl',[],1,0,0,0,
 			'YAPC::EU 2010','YAPC::(\w\w) (\d\d\d\d)|YAPC',['EU','2010'],1,0,0,0,
 			'London','London',[],1,0,1,0,
@@ -47,7 +57,7 @@ Test::Text::Keywords::Standard->new(
 		],[
 			'Perl Perl Perl Perl Perl',
 			'Lalala More Beer!!!',
-			
+
 			'Perl','Perl',[],1,0,0,0,
 			'Beer','Beer',[],0,1,1,1,
 		],
