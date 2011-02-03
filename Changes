@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+	- Fixed regexp for matching (again..)
 
 0.003     2011-01-22 04:26:37 Europe/Berlin
 	- Changed regexp again to be more consistent

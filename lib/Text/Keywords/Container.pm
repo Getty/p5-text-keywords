@@ -44,7 +44,7 @@ sub find_keywords {
 			$kl->[1]--;
 			my $found;
 			splice(@keywordlists, $idx, 1) if (!$kl->[1]);
-			my $rx = qr/(^|[\W_])($keyword)/i;
+			my $rx = qr/(^|[^\w]|_)($keyword)/i;
 			my @text_found;
 			my $primary_str = $primary;
 			push (@text_found, [$primary_str =~ $rx]), $primary_str =~ s{$rx}{} while $primary_str =~ $rx;
