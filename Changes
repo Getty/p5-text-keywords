@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.900     2011-02-15 19:05:55 Europe/Berlin
 	- Modified behaviour for being strict (dont allow chars behind keyword)
 
 0.004     2011-02-03 05:35:24 Europe/Berlin
