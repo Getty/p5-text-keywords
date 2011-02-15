@@ -12,7 +12,7 @@ Test::Text::Keywords::Standard->new(
 	setup => [{
 		lists => [
 			['Perl','YAPC::(\w\w) (\d\d\d\d)|YAPC'],
-			['Linux','Microsoft','Par($|\W)'],
+			['Linux','Microsoft','Par'],
 		],
 	},{
 		lists => [
@@ -30,7 +30,7 @@ Test::Text::Keywords::Standard->new(
 			'YAPC','YAPC::(\w\w) (\d\d\d\d)|YAPC',[undef,undef],1,0,0,0,
 			'YAPC::EU 2010','YAPC::(\w\w) (\d\d\d\d)|YAPC',['EU','2010'],0,1,0,0,
 			'YAPC::EU 2009','YAPC::(\w\w) (\d\d\d\d)|YAPC',['EU','2009'],0,1,0,0,
-			'Par','Par($|\W)',[''],1,0,0,1,
+			'Par','Par',[],1,0,0,1,
 			'London','London',[],1,0,1,0,
 			'Beer','Beer',[],1,0,1,1,
 			'Ice','Ice',[],1,0,1,0,
